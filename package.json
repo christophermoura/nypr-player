@@ -35,7 +35,7 @@
     "ember-cli-uglify": "^1.2.0",
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-export-application-global": "^1.0.5",
-    "ember-hifi": "^1.5.0",
+    "ember-hifi": "github:nypublicradio/ember-hifi#demo",
     "ember-load-initializers": "^0.5.1",
     "ember-moment": "7.3.0",
     "ember-resolver": "^2.0.3",
@@ -48,8 +48,8 @@
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
     "ember-cli-htmlbars": "^1.0.10",
-    "ember-holygrail-layout": "git+ssh://git@github.com/nypublicradio/ember-holygrail-layout.git",
-    "nypr-ui": "git+ssh://git@github.com/nypublicradio/nypr-ui.git"
+    "ember-holygrail-layout": "github:nypublicradio/ember-holygrail-layout",
+    "nypr-ui": "github:nypublicradio/nypr-ui#demo"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
