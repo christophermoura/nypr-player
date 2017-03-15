@@ -48,7 +48,7 @@
     "ember-cli-babel": "^5.1.7",
     "ember-cli-htmlbars": "^1.0.10",
     "ember-holygrail-layout": "nypublicradio/ember-holygrail-layout",
-    "ember-hifi": "nypublicradio/ember-hifi#dummy-connection-wiring",
+    "ember-hifi": "^1.7.0",
     "nypr-ui": "nypublicradio/nypr-ui"
   },
   "ember-addon": {
