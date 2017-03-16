@@ -50,7 +50,7 @@
     "ember-cli-htmlbars": "^1.0.10",
     "ember-holygrail-layout": "nypublicradio/ember-holygrail-layout",
     "ember-hifi": "^1.7.0",
-    "nypr-ui": "nypublicradio/nypr-ui"
+    "nypr-ui": "nypublicradio/nypr-ui#demo"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
