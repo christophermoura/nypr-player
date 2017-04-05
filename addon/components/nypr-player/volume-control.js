@@ -4,11 +4,12 @@ import get from 'ember-metal/get';
 import { isEmpty } from 'ember-utils';
 import computed from 'ember-computed';
 import { htmlSafe } from 'ember-string';
+import KeyboardCommandMixin from '../../mixins/keyboard-command-mixin';
 
-export default Ember.Component.extend({
+export default Ember.Component.extend(KeyboardCommandMixin, {
   layout,
   classNames: ['nypr-player-volume'],
-  classNameBindings: ['isMuted'],
+  classNameBindings: ['isMuted', 'isChangingVolume:active'],
   volumeInPercent: computed('volume', 'isMuted', {
     get() {
       if (get(this, 'isMuted')) {
@@ -64,5 +65,25 @@ export default Ember.Component.extend({
     toggleMute() {
       get(this, 'toggleMute')();
     }
-  }
+  },
+
+  keyboardKeys: {
+    volumeUp: ['ArrowRight'],
+    volumeDown: ['ArrowLeft']
+  },
+
+  keyboardCommands: {
+    volumeUp: {
+      keydown() {
+        get(this, 'setVolume')(get(this, 'volumeInPercent') + 6);
+        return false;
+      }
+    },
+    volumeDown: {
+      keydown() {
+        get(this, 'setVolume')(get(this, 'volumeInPercent') - 6);
+        return false;
+      }
+    }
+  },
 });

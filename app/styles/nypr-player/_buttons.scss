@@ -18,7 +18,8 @@
     outline: 0;
     @include svg-color($nypr-player-button-hover-color);
   }
-  &:active {
+  &:active,
+  &.active {
     outline: 0;
     @include svg-color($nypr-player-button-active-color);
   }
@@ -294,7 +295,8 @@
     fill: $nypr-player-button-color;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     outline: 0;
 
     .nypr-player-queue-icon {
@@ -312,7 +314,8 @@
     }
   }
 
-  &:active {
+  &:active,
+  &.active {
     outline: 0;
     .nypr-player-queue-icon {
       .nypr-player-queue-bar,
