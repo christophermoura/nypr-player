@@ -26,7 +26,7 @@
     "ember-hifi": "^1.11.1",
     "ember-keyboard": "2.1.9",
     "ember-moment": "^7.4.1",
-    "nypr-ui": "nypublicradio/nypr-ui#node-sass"
+    "nypr-ui": "nypublicradio/nypr-ui#demo"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
